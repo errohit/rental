@@ -39,7 +39,7 @@ public class DateRange{
     // False if there is an overlap.
     public static Boolean checkForOverlap( DateRange d1 , DateRange d2 ){
 
-        if( ( d1.getFromDate().compareTo(d2.getToDate()) < 0 ) && ( d1.getToDate().compareTo( d2.getFromDate()) < 0 ))
+        if( ( d1.getFromDate().compareTo(d2.getFromDate()) < 0 ) && ( d1.getToDate().compareTo( d2.getToDate()) < 0 ))
             return true;
         else
             return false;
